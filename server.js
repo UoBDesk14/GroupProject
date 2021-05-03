@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Point static path to dist (folder where build files are located)
-app.use(express.static(path.join(__dirname, 'dist/dashboard')));
+app.use(express.static(path.join(__dirname, 'dist/LostAndFound')));
 
 // Set our api routes
 app.use('/api', api);

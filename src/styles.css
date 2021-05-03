@@ -59,6 +59,11 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* everywhere else */
 * {

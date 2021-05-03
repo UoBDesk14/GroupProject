@@ -4,13 +4,19 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AppAdminComponent } from './app-admin/app-admin.component';
+import { AppModeratorComponent } from './app-moderator/app-moderator.component';
+import { AppUserComponent } from './app-user/app-user.component';
+
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  {path: 'home', component: HomeComponent },
+  {path: 'login', component: LoginComponent },
+  {path: 'register', component: RegisterComponent },
+  {path: 'profile', component: ProfileComponent },
+  {path: 'user', component: AppUserComponent },
+  {path: 'mod', component: AppModeratorComponent },
+  {path: 'admin', component: AppAdminComponent },
+  {path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({

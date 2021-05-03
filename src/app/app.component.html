@@ -7,12 +7,12 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <h1>{{title}}</h1>
+<nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/profile">Profile</a>
+  <a routerLink="/login">Logout</a>
+</nav>
 <div class="container">
-  <nav>
-    <a routerLink="/home">Home</a>
-    <a routerLink="/profile">Profile</a>
-    <a routerLink="/login">Logout</a>
-  </nav>
   <div>
     <router-outlet></router-outlet>
   </div>
