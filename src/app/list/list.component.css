@@ -1,0 +1,9 @@
+.main {
+  position: relative;
+  width: 1200px;
+  margin: 15px auto;
+}
+
+.list-item-wrap {
+  width: 800px;
+}

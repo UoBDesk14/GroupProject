@@ -28,6 +28,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgxSliderModule} from '@angular-slider/ngx-slider';
 import { ListComponent } from './list/list.component';
+import { HeaderComponent } from './header/header.component';
+import { PostComponent } from './post/post.component';
 
 
 
@@ -60,6 +62,8 @@ const material = [
     LoginComponent,
     SignupComponent,
     ListComponent,
+    HeaderComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,

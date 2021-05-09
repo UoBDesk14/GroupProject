@@ -1,0 +1,12 @@
+<div class="header">
+  <header>
+    <div class="logo-text">Frontend Forum</div>
+    <div class="ac" *ngIf="!username">
+      <div class="login" (click)="goLogin()">Login</div>
+      <div class="signup" (click)="goRegister()">Signup</div>
+    </div>
+    <div class="ac">
+      <div class="login" *ngIf="username">{{username}}</div>
+    </div>
+  </header>
+</div>

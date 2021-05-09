@@ -1,1 +1,11 @@
-<p>list works!</p>
+<div>
+  <app-header></app-header>
+  <div class="main sc">
+    <div class="list-item-wrap">
+      <div class="list-item" *ngFor="let item of list.data"></div>
+    </div>
+    <div>
+      <button mat-raised-button color="accent" style="width: 100px" (click)="goPost()">New Post</button>
+    </div>
+  </div>
+</div>

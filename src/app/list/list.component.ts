@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router,
+  ) {
+  }
+
+  private subscriber!: Subscription;
+  list = {
+    data: []
+  };
 
   ngOnInit(): void {
   }
 
+  goPost(): void {
+    this.router.navigate(['post']);
+  }
 }
