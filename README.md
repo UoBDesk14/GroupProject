@@ -2,13 +2,13 @@
 
 ## Team Members
 
-| Name        | Email                        | Role                               | Photo                                                     |
-| ----------- | ---------------------------- | ---------------------------------- | --------------------------------------------------------- |
-| Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development | <img src="./member/Jiangqi Lou.jpg" style="zoom: 25%;" /> |
-|             |                              |                                    |                                                           |
-|             |                              |                                    |                                                           |
-|             |                              |                                    |                                                           |
-|             |                              |                                    |                                                           |
+| Name        | Email                        | Role                               | Photo |
+| ----------- | ---------------------------- | ---------------------------------- | ----- |
+| Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development |       |
+|             |                              |                                    |       |
+|             |                              |                                    |       |
+|             |                              |                                    |       |
+|             |                              |                                    |       |
 
 
 
