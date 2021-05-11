@@ -31,5 +31,26 @@ router.post("/add", (req, res, next) => {
     });
 });
 
+router.get('/list', (req, res) => {
+  const {page, pageSize} = req.query
+  Post
+    .find({})
+    .skip((page - 1) * pageSize)
+    .limit(Number(pageSize))
+    .sort([['_id',-1]])
+    .exec((err, data) => {
+      Post.count((err2, count) => {
+        res.status(200).json(
+          {
+            status: 1,
+            message: '成功',
+            data: data || [],
+            total: count
+          }
+        )
+      })
+    });
+})
+
 
 module.exports = router;

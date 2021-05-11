@@ -2,10 +2,17 @@
   <app-header></app-header>
   <div class="main sc">
     <div class="list-item-wrap">
-      <div class="list-item" *ngFor="let item of list.data"></div>
+      <div class="list-item" *ngFor="let item of list.data">
+        <div class="title">{{item['title']}}</div>
+        <div class="sc">
+          <div class="username">{{item['username']}}</div>
+          <div class="createdAt">{{item['createdAt']}}</div>
+        </div>
+      </div>
+      <mat-paginator style="background: transparent" [length]="list.total"
+                     [pageSize]="pageSize" (page)="goPage($event)">
+      </mat-paginator>
     </div>
-    <div>
-      <button mat-raised-button color="accent" style="width: 100px" (click)="goPost()">New Post</button>
-    </div>
+    <button mat-raised-button color="accent" style="width: 100px" (click)="goPost()">New Post</button>
   </div>
 </div>

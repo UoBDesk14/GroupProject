@@ -4,6 +4,21 @@
   margin: 15px auto;
 }
 
+
+
 .list-item-wrap {
-  width: 800px;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.list-item {
+  padding: 8px 15px;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+button {
+  align-self: flex-start;
 }

@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
-
+const host = 'http://localhost:3001';
 @Injectable({
   providedIn: 'root'
 })
@@ -29,7 +29,7 @@ export class AuthenticationService {
     };
     return this.http
       .post<{ message: String; error: Error, regSuc: boolean }>(
-        'http://localhost:3001/api/user/signup',
+        `${host}/api/user/signup`,
         userData
       );
   }
@@ -41,7 +41,7 @@ export class AuthenticationService {
     };
     return this.http
       .post<{ token: string; message: string, username: string }>(
-        'http://localhost:3001/api/user/login',
+        `${host}/api/user/login`,
         loginData
       );
   }
@@ -81,8 +81,11 @@ export class AuthenticationService {
       content
     };
     return this.http.post<{status: number, message: string}>(
-      'http://localhost:3001/api/post/add',
+      `${host}/api/post/add`,
       postData
     );
+  }
+  getList(page: number, pageSize: number) {
+    return this.http.get<{data: any[], status: number, message: string, total: number}>(`${host}/api/post/list?page=${page}&pageSize=${pageSize}`);
   }
 }
