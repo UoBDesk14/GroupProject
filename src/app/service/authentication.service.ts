@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
-const host = 'http://localhost:3001';
+const host = 'http://localhost:3000';
 @Injectable({
   providedIn: 'root'
 })
