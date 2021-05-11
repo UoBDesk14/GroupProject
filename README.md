@@ -1,4 +1,4 @@
-# forum
+# Forum
 
 ## Team Members
 
