@@ -1,34 +1,39 @@
-# Lost and found for UoB
+# forum
 
-- development tools: 
-- framework: Spring Boot + Spring Data JPA
-- datebase: MongoDB
+## Team Members
 
-## Features
+| Name        | Email                        | Role                               | Photo                                                     |
+| ----------- | ---------------------------- | ---------------------------------- | --------------------------------------------------------- |
+| Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development | <img src="./member/Jiangqi Lou.jpg" style="zoom: 25%;" /> |
+|             |                              |                                    |                                                           |
+|             |                              |                                    |                                                           |
+|             |                              |                                    |                                                           |
+|             |                              |                                    |                                                           |
 
-- Spring Boot + Maven
-- Exception handling
-- Sending emails (jetbrick-template)
-- Generating random verification codes
-- Common configuration
 
-## Main functions
 
-### Users
+## 1. Introduction
 
-- Authentication login
-- Changing numbers of passwords and mobile phones
-- Post, search, and view recruitment information
-- Claim the lost
-- Comment and chatting
 
-### Administrators
 
-- Managing recruitment information, incluing classifying items
-- Managing users
-- Posting notifications
-- Deal with the feedback
+## 2. Background and Motivation
 
-## Screenshot for the system
 
-## To-Do list
+
+## 3. System Implementation
+
+
+
+## 4. UX Design
+
+
+
+## 5. Sprints & Project Management
+
+
+
+## 6. Evaluation
+
+
+
+## 7. Conclusion
