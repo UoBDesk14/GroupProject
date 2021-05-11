@@ -18,4 +18,9 @@ export class HeaderComponent implements OnInit {
   goRegister(): void {
     this.router.navigate(['signup']);
   }
+  logoout():void {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    window.location.reload();
+  }
 }

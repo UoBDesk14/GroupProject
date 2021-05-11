@@ -5,8 +5,9 @@
       <div class="login" (click)="goLogin()">Login</div>
       <div class="signup" (click)="goRegister()">Signup</div>
     </div>
-    <div class="ac">
-      <div class="login" *ngIf="username">{{username}}</div>
+    <div class="ac" *ngIf="username">
+      <div class="login" >{{username}}</div>
+      <div class="login" (click)="logoout()">Logout</div>
     </div>
   </header>
 </div>

@@ -8,8 +8,8 @@ import {PostComponent} from './post/post.component';
 
 const routes: Routes = [
   {path: '', component: ListComponent},
-  {path: 'login', component: LoginComponent, canActivate: [AuthGuard]},
-  {path: 'signup', component: SignupComponent, canActivate: [AuthGuard]},
+  {path: 'login', component: LoginComponent,},
+  {path: 'signup', component: SignupComponent,},
   {path: 'post', component: PostComponent, canActivate: [AuthGuard]},
 ];
 
