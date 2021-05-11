@@ -1,6 +1,8 @@
 <div class="post fc">
-  <input matInput placeholder="write a title" name="title" [(ngModel)]="title">
-  <textarea cdkTextareaAutosized placeholder="write a content" name="content" [(ngModel)]="content"></textarea>
-  <input type="hidden" [(ngModel)]="username" name="username"/>
-  <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+  <div class="wrap fc">
+    <input matInput placeholder="write a title" name="title" [(ngModel)]="title">
+    <textarea cdkTextareaAutosized placeholder="write a content" name="content" [(ngModel)]="content"></textarea>
+    <input type="hidden" [(ngModel)]="username" name="username"/>
+    <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+  </div>
 </div>
