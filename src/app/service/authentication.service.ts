@@ -1,7 +1,9 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
+
 const host = 'http://localhost:3000';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -80,12 +82,27 @@ export class AuthenticationService {
       title,
       content
     };
-    return this.http.post<{status: number, message: string}>(
+    return this.http.post<{ status: number, message: string }>(
       `${host}/api/post/add`,
       postData
     );
   }
+
   getList(page: number, pageSize: number) {
-    return this.http.get<{data: any[], status: number, message: string, total: number}>(`${host}/api/post/list?page=${page}&pageSize=${pageSize}`);
+    return this.http.get<{ data: any[], status: number, message: string, total: number }>(`${host}/api/post/list?page=${page}&pageSize=${pageSize}`);
+  }
+
+  // @ts-ignore
+  getDetail(id) {
+    return this.http.get<{ data: any[], status: number, message: string }>(`${host}/api/post/detail?id=${id}`);
+  }
+
+  // @ts-ignore
+  comment(content, username, id) {
+    return this.http.post<{ data: any[], status: number, message: string }>(`${host}/api/post/comment`, {content, id, username});
+  }
+  // @ts-ignore
+  deleteItem(id) {
+    return this.http.get<{data: any[], status: number, message: string }>(`${host}/api/post/deleteItem?id=${id}`);
   }
 }

@@ -52,5 +52,53 @@ router.get('/list', (req, res) => {
     });
 })
 
+router.get('/detail', (req, res) => {
+  const {id} = req.query
+  Post.find({ _id: id})
+    .exec((err, data) => {
+      res.status(200).json(
+        {
+          status: 1,
+          message: '成功',
+          data: data || {},
+        }
+      )
+  })
+})
+
+router.post('/comment', (req, res) => {
+  const {content, username, id} = req.body
+  console.log(username)
+  Post.find({_id: id}).exec((err, data) => {
+    console.log(data)
+    Post.updateOne({_id: id}, {$push: {comments: {
+        content, username
+      }}}).exec((err, data) => {
+        res.status(200).json({
+          status: 1,
+          message: '成功',
+          data: data || {},
+        })
+    })
+  })
+})
+
+router.get('/deleteItem', (req, res) => {
+  const {id} = req.query
+  Post.findById({_id: id}, (err, doc) => {
+    if (!err) {
+      doc.remove((err) => {
+        if (!err) {
+          res.json({
+            status: 1,
+            message: '成功',
+            data: {},
+          })
+        }
+      })
+    }
+  })
+})
+
 
 module.exports = router;

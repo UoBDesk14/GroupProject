@@ -42,4 +42,9 @@ export class ListComponent implements OnInit {
     this.page = event.pageIndex + 1;
     this.getList();
   }
+  // tslint:disable-next-line:typedef
+  goDetail(id: string) {
+    // @ts-ignore
+    this.router.navigate(['detail'], { queryParams: { id }});
+  }
 }

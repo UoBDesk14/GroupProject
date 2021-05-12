@@ -15,7 +15,9 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  comments: [{content: String, userName: String, createdAt: String}],
+  comments: [{content: String, username: String, createdAt: {
+      type: String, default: dayjs().format('YYYY-MM-DD HH:mm:ss'),
+    }}],
   createdAt: {
     type: String,
     default: dayjs().format('YYYY-MM-DD HH:mm:ss'),

@@ -5,12 +5,14 @@ import {SignupComponent} from './authentication/signup/signup.component';
 import {AuthGuard} from './authentication/authentication.guard';
 import {ListComponent} from './list/list.component';
 import {PostComponent} from './post/post.component';
+import {DetailComponent} from './detail/detail.component';
 
 const routes: Routes = [
   {path: '', component: ListComponent},
   {path: 'login', component: LoginComponent,},
   {path: 'signup', component: SignupComponent,},
   {path: 'post', component: PostComponent, canActivate: [AuthGuard]},
+  {path: 'detail', component: DetailComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

@@ -31,6 +31,7 @@ import {ListComponent} from './list/list.component';
 import {HeaderComponent} from './header/header.component';
 import {PostComponent} from './post/post.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { DetailComponent } from './detail/detail.component';
 
 
 const material = [
@@ -64,6 +65,7 @@ const material = [
     ListComponent,
     HeaderComponent,
     PostComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,

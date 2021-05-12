@@ -2,7 +2,7 @@
   <app-header></app-header>
   <div class="main sc">
     <div class="list-item-wrap">
-      <div class="list-item" *ngFor="let item of list.data">
+      <div class="list-item" *ngFor="let item of list.data" (click)="goDetail(item['_id'])">
         <div class="title">{{item['title']}}</div>
         <div class="sc">
           <div class="username">{{item['username']}}</div>
