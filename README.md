@@ -1,4 +1,4 @@
-# Forum
+# LostAndFound
 
 ## Team Members
 
@@ -38,19 +38,44 @@ China also attaches great importance to the construction of the lost and found s
 
 Through the understanding and analysis of some lost-and-found platforms, it can be seen that both domestic and foreign lost-and-found work has achieved certain results, and the target groups and coverage scope are also very broad, but the pertinence is slightly biased. Therefore, it is very necessary to build a targeted and fully functional lost-and-found system for Bristol university.
 ## 3. System Implementation
+### 3.1 Stack architecture and system design
+
+### 3.2 Back end implementation
+
+### 3.3 Middle Tier implementation
+
+### 3.4 Front End implementation
+
+### 3.5 Deployment details
 
 
 
 ## 4. UX Design
+### 4.1 Design Process and Early prototyping and ideation
+
+### 4.2 Identification of interacting users
+
+### 4.3 UX approach
+
+### 4.4 Interaction flow diagrams for final key subsystems
 
 
 
 ## 5. Sprints & Project Management
 
+### 5.1 Group working methods used and team roles
+
+### 5.2 Team use of Git and documentation of the sprints
+
 
 
 ## 6. Evaluation
+### 6.1 Techniques used & awareness of their limitations
 
+### 6.2 Testing
 
 
 ## 7. Conclusion
+### 7.1 Project conclusion
+
+### 7.2 Future work

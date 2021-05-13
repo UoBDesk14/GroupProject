@@ -8,11 +8,11 @@ const postRoutes = require('./routes/post')
 const path = require('path')
 
 const {
-  MONGO_USERNAME = 'admin',
-  MONGO_PASSWORD = 'ljq50195019',
-  MONGO_HOSTNAME = 'localhost',
-  MONGO_PORT = 27018,
-  MONGO_DB = 'forum'
+  MONGO_USERNAME,
+  MONGO_PASSWORD,
+  MONGO_HOSTNAME,
+  MONGO_PORT,
+  MONGO_DB
 } = process.env
 
 const options = {
@@ -24,12 +24,12 @@ const options = {
 
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`
 
-const app = express()
+const app = express();
 
-app.use(cors())
+app.use(cors());
 
-app.use(bodyParser.json({limit: '10mb', extended: true}))
-app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../../dist/forum')))
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'))

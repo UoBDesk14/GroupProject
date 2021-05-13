@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../../mongo_schema/user");
 const jwt = require("jsonwebtoken");
-const secretKey = require("../jwtsecretkey");
+//const secretKey = require("../jwtsecretkey");
 
 router.post("/register", (req, res, next) => {
   if (req.body.username === "null") {
@@ -44,7 +44,7 @@ router.post("/login", (req, res, next) => {
     auth(req.body.username, req.body.password, userPassword, res);
   });
 });
-
+const secretKey = "test-code large number: 2333333333333333333333333333333333333333";
 function auth(
   username,
   password,

@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit, OnDestroy {
   onSubmit(form: NgForm) {
     if (form.invalid) {
       return;
-    } else if (form.value.password != form.value.passAuth) {
+    } else if (form.value.password !== form.value.passAuth) {
       alert('passwords do not match');
       return;
     }
