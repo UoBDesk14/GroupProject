@@ -128,4 +128,12 @@ As for limitations:
 ## 7. Conclusion
 ### 7.1 Project conclusion
 
+
 ### 7.2 Future work
+In this system research, development, implementation process due to personal ability is limited, consider the problem is not comprehensive enough so that the system in the design and implementation of some deficiencies, these deficiencies will be improved in the follow-up practice.
+
+1. The system is not clear enough about the user information management and classification authority.
+
+2. The current system only achieves the desktop application, does not realize the mobile client, this can be developed in subsequent work.
+
+3. Need to enhance the data statistics, classification search function, so that users more convenient use of the system.
