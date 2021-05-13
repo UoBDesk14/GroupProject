@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../../mongo_schema/user");
+const User = require("../../db/user");
 const jwt = require("jsonwebtoken");
-//const secretKey = require("../jwtsecretkey");
 
 router.post("/register", (req, res, next) => {
   if (req.body.username === "null") {

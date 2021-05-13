@@ -39,6 +39,10 @@ China also attaches great importance to the construction of the lost and found s
 Through the understanding and analysis of some lost-and-found platforms, it can be seen that both domestic and foreign lost-and-found work has achieved certain results, and the target groups and coverage scope are also very broad, but the pertinence is slightly biased. Therefore, it is very necessary to build a targeted and fully functional lost-and-found system for Bristol university.
 ## 3. System Implementation
 ### 3.1 Stack architecture and system design
+Diagram of the lost and found system
+<p align="center">
+<img src="images/architecture.png"/>
+</p>
 
 ### 3.2 Back end implementation
 

@@ -1,9 +1,8 @@
 const dayjs = require('dayjs');
-
 const express = require("express");
 const router = express.Router();
-const User = require("../../mongo_schema/user");
-const Post = require("../../mongo_schema/post");
+const User = require("../../db/user");
+const Post = require("../../db/post");
 
 router.post("/add", (req, res, next) => {
   /*cant use null as a username*/

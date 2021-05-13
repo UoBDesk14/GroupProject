@@ -25,16 +25,13 @@ const options = {
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`
 
 const app = express();
-
 app.use(cors());
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../../dist/forum')))
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'))
 })
-
 
 /*connect to mongoDb*/
 mongoose.connect(url, options)
