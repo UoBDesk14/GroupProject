@@ -24,11 +24,16 @@
 }
 
 .list-item {
-  width: 1200px;
+  width: 1240px;
+
   box-sizing: border-box;
   padding: 8px 15px;
   background: #fff;
   margin: 0 auto 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+textare {
+  border-radius: 8px;
 }

@@ -6,12 +6,20 @@
 input {
   width: 500px;
   margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
+  border-color: #6b6b6b!important;
+  outline: 0;
+  border-width: 1px;
+  caret-color: #6b6b6b!important;
 }
 
 textarea {
   width: 500px;
   height: 200px;
   margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 

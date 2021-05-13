@@ -29,6 +29,7 @@ export class DetailComponent implements OnInit {
   getDetail() {
     // @ts-ignore
     this.authService.getDetail(this.route.queryParams._value.id).subscribe((data: any) => {
+      data.data[0].comments = data.data[0].comments.reverse();
       this.data = data.data[0];
     });
   }
