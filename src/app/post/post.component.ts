@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthenticationService} from '../service/authentication.service';
+import {CommonApiService} from '../service/common-api.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 })
 export class PostComponent implements OnInit {
 
-  constructor(private authService: AuthenticationService,public router: Router) { }
+  constructor(private authService: CommonApiService, public router: Router) { }
   username = '';
   title = '';
   content = '';

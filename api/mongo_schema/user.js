@@ -10,20 +10,8 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-  },
-  gender: {
-    type: String,
-    default: null,
-    required: false,
-  },
-  age: {
-    type: Number,
-    default: null,
-    required: false,
-  },
+  }
 })
 
-/*unique validator is a plugin that sends detailed responses if
-values aren't unique*/
 userSchema.plugin(uniqueValidatorPlugin)
 module.exports = mongoose.model('User', userSchema, 'User')

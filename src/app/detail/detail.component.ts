@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {AuthenticationService} from '../service/authentication.service';
+import {CommonApiService} from '../service/common-api.service';
 
 @Component({
   selector: 'app-detail',
@@ -12,7 +12,7 @@ export class DetailComponent implements OnInit {
   constructor(
     public router: Router,
     private route: ActivatedRoute,
-    private authService: AuthenticationService,
+    private authService: CommonApiService,
   ) {
   }
 
@@ -47,11 +47,15 @@ export class DetailComponent implements OnInit {
   deleteItem() {
     const r = confirm('Are you sure to delete this post?');
     if (r === true) {
-      // @ts-ignore
-      this.authService.deleteItem(this.route.queryParams._value.id).subscribe((data: any) => {
-        alert('ok');
-        this.router.navigate(['']);
-      });
+      if (this.username === this.data.username) {
+        // @ts-ignore
+        this.authService.deleteItem(this.route.queryParams._value.id).subscribe((data: any) => {
+          alert('ok');
+          this.router.navigate(['']);
+        });
+      } else {
+        alert('no permission');
+      }
     }
   }
 }

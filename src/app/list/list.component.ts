@@ -2,7 +2,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {AuthenticationService} from '../service/authentication.service';
+import {CommonApiService} from '../service/common-api.service';
 
 @Component({
   selector: 'app-list',
@@ -13,7 +13,7 @@ export class ListComponent implements OnInit {
 
   constructor(
     public router: Router,
-    private authService: AuthenticationService,
+    private authService: CommonApiService,
   ) {
   }
 

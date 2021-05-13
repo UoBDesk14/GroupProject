@@ -13,10 +13,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/Toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
-import {LoginComponent} from './authentication/login/login.component';
-import {SignupComponent} from './authentication/signup/signup.component';
-import {AuthenticationService} from './service/authentication.service';
-import {UrlStateService} from './service/url-state.service';
+import {LoginComponent} from './login/login.component';
+import {SignupComponent} from './signup/signup.component';
+import {CommonApiService} from './service/common-api.service';
+import {AuthService} from './service/auth.service';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSliderModule} from '@angular/material/slider';
@@ -33,30 +33,6 @@ import {PostComponent} from './post/post.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { DetailComponent } from './detail/detail.component';
 
-
-const material = [
-  BrowserAnimationsModule,
-  MatInputModule,
-  MatButtonModule,
-  MatPaginatorModule,
-  FormsModule,
-  MatCardModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatDialogModule,
-  ReactiveFormsModule,
-  MatCheckboxModule,
-  MatSelectModule,
-  MatSliderModule,
-  MatProgressSpinnerModule,
-  MatListModule,
-  MatDatepickerModule,
-  MatNativeDateModule,
-  MatRadioModule,
-  MatExpansionModule,
-  NgxSliderModule
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,14 +46,19 @@ const material = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
-    BrowserAnimationsModule,
     HttpClientModule,
-    ...material,
+    MatInputModule,
+    MatButtonModule,
+    MatPaginatorModule,
+    FormsModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatCardModule,
+    BrowserAnimationsModule,
   ],
   providers: [
-    AuthenticationService,
-    UrlStateService,
+    CommonApiService,
+    AuthService,
   ],
   bootstrap: [AppComponent],
   entryComponents: [ListComponent],

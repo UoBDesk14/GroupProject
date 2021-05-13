@@ -24,17 +24,13 @@ const options = {
 
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`
 
-/*init an express middleware*/
 const app = express()
 
-/*use cors to allow cross origin resource*/
 app.use(cors())
 
-/*use json bodyparser to parse url req.body to json*/
 app.use(bodyParser.json({limit: '10mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
-app.use(express.static(path.join(__dirname, '../../dist/demosite')))
-// Catch all other routes and return the index file
+app.use(express.static(path.join(__dirname, '../../dist/public')))
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'))
 })

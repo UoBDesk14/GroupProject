@@ -25,7 +25,5 @@ const postSchema = new mongoose.Schema({
   },
 });
 
-/*unique validator is a plugin that sends detailed responses if
-values aren't unique*/
 postSchema.plugin(uniqueValidatorPlugin);
 module.exports = mongoose.model("Post", postSchema, 'Post');

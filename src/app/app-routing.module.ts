@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {LoginComponent} from './authentication/login/login.component';
-import {SignupComponent} from './authentication/signup/signup.component';
-import {AuthGuard} from './authentication/authentication.guard';
+import {LoginComponent} from './login/login.component';
+import {SignupComponent} from './signup/signup.component';
+import {AuthGuard} from './provider/guard.provider';
 import {ListComponent} from './list/list.component';
 import {PostComponent} from './post/post.component';
 import {DetailComponent} from './detail/detail.component';
