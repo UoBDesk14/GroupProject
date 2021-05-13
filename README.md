@@ -114,5 +114,6 @@ Docker create the nodejs image and db image, expose port 3000 to connect to the 
 
 ## 7. Conclusion
 ### 7.1 Project conclusion
-
+The members of our team have formed a very good cooperation in this project. Everyone in the team is responsible for a part of the whole project, and everyone is working hard to participate in the conception of the system and the final project sprint. Among them, Jiangqi Lou guided the team very well. He provided vital and valuable experience for our team during the design and planning of the system. In the daily work group, our main communication channel is WeChat. We realize that we usually have limited communication time in class, so we will communicate through WeChat at any time, and team members’ questions can also be answered through mobile phones at any time. Therefore, the work efficiency of our team is very high. This is a good online collaboration experience.
+Of course, there are some aspects of our project that can be further changed and optimized. For example, the text box style of the forum is not particularly beautiful, the aesthetics of the web page needs to be enhanced, and the QR code login function of the lost and found system should be added.
 ### 7.2 Future work
