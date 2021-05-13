@@ -13,7 +13,7 @@
 | Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development |       |
 | Ruiqing Du  | bx20728@bristol.ac.uk        | Report writing                     |       |
 | Ying Duan   | if20741@bristol.ac.uk        | Report writing                     |       |
-|             |                              |                                    |       |
+| Hao Fu      | si20170@bristol.ac.uk        |                                    |       |
 |             |                              |                                    |       |
 
 
@@ -108,6 +108,19 @@ Docker create the nodejs image and db image, expose port 3000 to connect to the 
 
 ## 6. Evaluation
 ### 6.1 Techniques used & awareness of their limitations
+
+We use the MEAN stack to build our application. MEAN represents the emergence of JavaScript as a "full-stack development" language that runs everything in the application from the front-end to the back-end. Each abbreviation in MEAN represents a component in the stack:
+• MongoDB: A database server that uses JSON (JavaScript Object Notation) to query and store data structures in binary JSON format
+• Express: server-side JavaScript framework
+• Angular: client-side JavaScript framework
+• Node.js: JavaScript runtime
+
+
+
+As for limitations:
+1. You need experts: The MEAN technology stack has many "limitations" and errors. You need to understand these errors and errors to avoid errors. For example, Angular has many limitations (even though some of these problems have been solved in Angular 2). The same goes for MongoDB and other technologies in the stack. This also brings up the next big problem:
+2. Hard to find experts: You will have a hard time finding developers who are strong in these new technologies. For example, we tried to find a strong Angular developer from around and let him answer the questions in our application. It's really hard. Therefore, it is still necessary to rely on entry-level programmers on these technologies and try to make them learn these technologies quickly in some way. But usually this cannot be solved well.
+3. Not yet tried and tested: You may not find many answers to MEAN online questions. Some technologies are so new that there is only a small online community discussing problems that may arise during the development process.
 
 ### 6.2 Testing
 
