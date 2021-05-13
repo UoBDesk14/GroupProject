@@ -43,11 +43,14 @@ export class LoginComponent implements OnInit, OnDestroy {
           // @ts-ignore
           this.commonApiService.setTokenAndUserName(res.token, res.username);
           this.router.navigate(['']);
-        } else if (res.message == 'Incorrect password') {
+        } else if (res.message === 'Incorrect password') {
           alert('Incorrect password');
         } else {
           alert('Incorrect username');
         }
       });
+  }
+  goRegister(): void {
+    this.router.navigate(['signup']);
   }
 }

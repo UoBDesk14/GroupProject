@@ -40,7 +40,7 @@ export class DetailComponent implements OnInit {
     }
     // @ts-ignore
     this.authService.comment(this.content, this.username, this.route.queryParams._value.id).subscribe((data: any) => {
-      alert('成功');
+      alert('success');
       this.getDetail();
     });
   }

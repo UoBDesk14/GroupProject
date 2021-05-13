@@ -8,7 +8,8 @@ import {PostComponent} from './post/post.component';
 import {DetailComponent} from './detail/detail.component';
 
 const routes: Routes = [
-  {path: '', component: ListComponent},
+  {path: '', component: LoginComponent},
+  {path: 'list', component: ListComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'post', component: PostComponent, canActivate: [AuthGuard]},
