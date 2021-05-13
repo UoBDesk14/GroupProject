@@ -6,7 +6,7 @@
 | ----------- | ---------------------------- | ---------------------------------- | ----- |
 | Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development |       |
 | Ruiqing Du  | bx20728@bristol.ac.uk        | Report writing                     |       |
-|             |                              |                                    |       |
+| Ying Duan     if20741@bristol.ac.uk       |  Report writing                            |                                    |       |
 |             |                              |                                    |       |
 |             |                              |                                    |       |
 
