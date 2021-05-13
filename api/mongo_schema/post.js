@@ -23,6 +23,9 @@ const postSchema = new mongoose.Schema({
     default: dayjs().format('YYYY-MM-DD HH:mm:ss'),
     required: true,
   },
+  updatedAt: {
+    type: String,
+  },
 });
 
 postSchema.plugin(uniqueValidatorPlugin);

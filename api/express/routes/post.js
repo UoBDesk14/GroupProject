@@ -1,3 +1,5 @@
+const dayjs = require('dayjs');
+
 const express = require("express");
 const router = express.Router();
 const User = require("../../mongo_schema/user");
@@ -37,7 +39,7 @@ router.get('/list', (req, res) => {
     .find({})
     .skip((page - 1) * pageSize)
     .limit(Number(pageSize))
-    .sort([['_id',-1]])
+    .sort([['updatedAt', -1], ['_id',-1]])
     .exec((err, data) => {
       Post.count((err2, count) => {
         res.status(200).json(
@@ -71,7 +73,7 @@ router.post('/comment', (req, res) => {
   console.log(username)
   Post.find({_id: id}).exec((err, data) => {
     console.log(data)
-    Post.updateOne({_id: id}, {$push: {comments: {
+    Post.updateOne({_id: id}, {$set: {updatedAt: dayjs().format('YYYY-MM-DD HH:mm:ss')},$push: {comments: {
         content, username
       }}}).exec((err, data) => {
         res.status(200).json({
