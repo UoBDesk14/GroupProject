@@ -30,7 +30,7 @@ app.use(cors())
 
 app.use(bodyParser.json({limit: '10mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
-app.use(express.static(path.join(__dirname, '../../dist/public')))
+app.use(express.static(path.join(__dirname, '../../dist/forum')))
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'))
 })
