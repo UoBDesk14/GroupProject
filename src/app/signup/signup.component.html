@@ -1,7 +1,7 @@
 <div class="signup">
   <mat-card class="signupForm">
     <form class="signup-form" (submit)="onSubmit(form)" #form="ngForm">
-      <h2>Forum Register</h2>
+      <h2>Register</h2>
       <mat-form-field>
         <input matInput name="username" ngModel type="text" placeholder="Username" #username="ngModel" required>
         <mat-error *ngIf="username.invalid">Please write a valid username.</mat-error>

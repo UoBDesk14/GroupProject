@@ -1,5 +1,11 @@
 # LostAndFound
 
+## Run instructions
+1. npm install
+2. ng build
+3. docker-compose up --build
+4. access (http://localhost:3000)
+
 ## Team Members
 
 | Name        | Email                        | Role                               | Photo |
@@ -39,19 +45,46 @@ China also attaches great importance to the construction of the lost and found s
 Through the understanding and analysis of some lost-and-found platforms, it can be seen that both domestic and foreign lost-and-found work has achieved certain results, and the target groups and coverage scope are also very broad, but the pertinence is slightly biased. Therefore, it is very necessary to build a targeted and fully functional lost-and-found system for Bristol university.
 ## 3. System Implementation
 ### 3.1 Stack architecture and system design
-Diagram of the lost and found system
+Diagram of the lost and found system:
 <p align="center">
 <img src="images/architecture.png"/>
 </p>
+The whole system is divided into 2 parts, the front end part and the server part.
+The front end part contains the components and the services. The components are used to display different content of the website and the services are used to communicate with the server api.
+The server part has two apis. The user api is to manage the login and signup function of the application and the post api is to manage the message and comment function of the system.
+Both of the them can connect to the mongo database to access the user data and the post data stored in the database.
 
 ### 3.2 Back end implementation
+Database used: MongoDb<br/>
+Backend database models:
+1. Post model: post title, post content, username of the writer, comments, post create time, post update time.
+2. User model: username and password.
 
 ### 3.3 Middle Tier implementation
+The server side use nodejs, express as the server. There are two apis:
+- Post api:
+1. Get the add post request and save the post into database post model.
+2. Get the post list and send data to the front end.
+3. Get the post detail and send data to the front end.
+4. Get the add comment request and update data.
+5. Get the delete request and delete the post.
+- User api:
+1. Get the signup request and save the user information into database user model. If user exist, return error message.
+2. Get the login request and compare with the user data in the database. If the data matched, return the success response, else, return the error message.
 
 ### 3.4 Front End implementation
-
+Front end used: Angular<br/>
+Components:
+1. Detail component: Display the post detail information, include post title, post body, comments, comment time, post delete button and comment submit button.
+2. Header component: Display the top navigation link in the home page, when the user has not logged in, display the login and signup button, else, display the logged username and logout button. 
+3. List component: Display the posts on the home page, limit to 8 posts per page.
+4. Login component: Display the form for user to login. If the user does not type in the valid information, the warning message will appear.
+5. Signup component: Display the form for user to register. User need to type in the username, password and repeat password. If the user does not type in the valid information, the warning message will appear.
+6. Post component: Display the input box for user to write the post and comment. The input box contain the post title and post content.
 ### 3.5 Deployment details
-
+The lost and found system use docker to achieve the continuous integration and deployment.
+The detail configuration are contained in the Dockerfile and the docker-compose.yml file.
+Docker create the nodejs image and db image, expose port 3000 to connect to the server.
 
 
 ## 4. UX Design

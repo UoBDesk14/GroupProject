@@ -44,7 +44,7 @@ router.get('/list', (req, res) => {
         res.status(200).json(
           {
             status: 1,
-            message: '成功',
+            message: 'success',
             data: data || [],
             total: count
           }
@@ -60,7 +60,7 @@ router.get('/detail', (req, res) => {
       res.status(200).json(
         {
           status: 1,
-          message: '成功',
+          message: 'success',
           data: data || {},
         }
       )
@@ -77,7 +77,7 @@ router.post('/comment', (req, res) => {
       }}}).exec((err, data) => {
         res.status(200).json({
           status: 1,
-          message: '成功',
+          message: 'success',
           data: data || {},
         })
     })
@@ -92,7 +92,7 @@ router.get('/deleteItem', (req, res) => {
         if (!err) {
           res.json({
             status: 1,
-            message: '成功',
+            message: 'success',
             data: {},
           })
         }

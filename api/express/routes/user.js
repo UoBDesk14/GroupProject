@@ -50,7 +50,7 @@ function auth(
   authPassword,
   res
 ) {
-  if (password != authPassword) {
+  if (password !== authPassword) {
     return res.json({
       message: "Incorrect password",
       status: 0
