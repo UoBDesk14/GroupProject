@@ -113,11 +113,13 @@ Design process:
 - Build the program according to the paper prototype
 
 - Program testing
-### 4.2 Identification of interacting users
 
-### 4.3 UX approach
 
-### 4.4 Interaction flow diagrams for final key subsystems
+### 4.2 UX approach
+Intended user: Students and teachers who may have lost item or pick the lost item.
+
+UX design concept: The lost-and-found system needs to ensure that the user can find the main focus after entering the system, so the homepage adopts the mode of display panel, which directly displays the lost-and-found information and the missing notice information. But if you need to further operation, you need to use the login entrance on the upper right of the interface to log into the system before operation. In order to ensure the ease of use of the system, the user login and registration interface adopts a unified layout. An alert will pop up after the user enters an illegal message to alert the user. After the user logs in, user information will be displayed at the top, and the user can normally publish the error and find information and reply to others' information.
+### 4.3 Interaction flow diagrams for final key subsystems
 <p align="center">
   <img src="images/flowdiagrams.png"/>
 </p>
