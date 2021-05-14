@@ -30,9 +30,8 @@ The establishment of the campus lost and found system is to pick up information 
 4. Login and signup system for the users and the administrators of the forum.
 
 ### 1.3 Project presentation video
-<p align="center">
-  <a href='images/Demo_desk14.mp4' target='_blank'><img src="images/video.png"/></a>
-</p>
+
+[![images/video.png](http://img.youtube.com/vi/6ozTcDxpnCk/0.jpg)](http://www.youtube.com/watch?v=6ozTcDxpnCk "Project presentation video")
 
 ## 2. Background and Motivation
 ### 2.1 Background of the project
