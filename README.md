@@ -102,6 +102,7 @@ Docker create the nodejs image and db image, expose port 3000 to connect to the 
 
 ### 5.1 Group working methods used and team roles
 The members of our team have formed a very good cooperation in this project. Everyone in the team is responsible for a part of the overall project. Among them, Jiangqi Lou guided the team very well. He provided vital and valuable experience for our team during the overall design and planning of the system. The remaining four members also assist Jiangqi Lou's work well.
+
 In our daily work, we create, delete and manage various issues under "Projects" on the GitHub board. The phased work results of each team member can be viewed through GitHub. Our main communication channel is WeChat. We realize that we usually have limited time to communicate through Microsoft Teams in class, so we choose to communicate at any time through WeChat. For some related questions, team members can also reply at any time via WeChat. When performing agile sprints, the frequency of meetings with group members through WeChat changed from twice a week to four times a week. Therefore, the work efficiency of our team is relatively high. In short, this is a good online collaboration experience.
 
 ### 5.2 Team use of Git and documentation of the sprints
