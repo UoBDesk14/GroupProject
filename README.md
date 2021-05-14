@@ -176,9 +176,17 @@ The result of this project reached the goal we established at the beginning, and
 3. The front end of this project has successfully implemented user registration and login functions, user comment functions, comment editing, deletion and submission functions,the function of posting and deleting posts.
 4. This project can guarantee a certain degree of security, such as setting the user's permission to delete posts to prevent arbitrary deletion of posts.
 
-In short, the lost and found forum established by this project realizes the functions of user login and logout, the release of news of lost property, browsing, modification and commenting of posts. The forum can help the owner to match with the picker. At the same time, since the forum can allow multiple users to comment on posts, this can play a role of multi-user supervision prevent people from fraudulently claiming other people's items.Hence, the design of the project is based around the concept of “serious play”
+In short, the lost and found forum established by this project realizes the functions of user login and logout, the release of news of lost property, browsing, modification and commenting of posts. The forum can help the owner to match with the picker. At the same time, since the forum can allow multiple users to comment on posts, this can play a role of multi-user supervision prevent people from fraudulently claiming other people's items.Hence, the design of the project is based around the concept of “serious play”.
 
-### 7.2 Future work
+### 7.2 The impact of the coronavirus
+It is undeniable that the coronavirus has had a great impact on our learning experience, and there are two main problems faced by members.
+
+1. Due to the coronavirus, the experience of online learning has caused the lack of face-to-face interaction between members. In the early stages of project work, it is difficult for us to concentrate all our energy on our work, which brings challenges. However, in the later stage of the project development, due to the increase in the number of online meetings and the enhanced tacit understanding between the team members, the work efficiency of the team members was greatly enhanced.
+2. Some of our team members are in the UK and some are in China. Therefore, the jet lag has hindered our communication. Usually, group members cannot reply to messages quickly. In order to solve this problem, in addition to the class, we also agreed to communicate through WeChat meetings.
+
+In short, although the epidemic has posed many challenges to our team's work, we have also actively sought a variety of methods to overcome the difficulties.
+
+### 7.3 Future work
 In this system research, development, implementation process due to personal ability is limited, consider the problem is not comprehensive enough so that the system in the design and implementation of some deficiencies, these deficiencies will be improved in the follow-up practice.
 
 1. The system is not clear enough about the user information management and classification authority.
