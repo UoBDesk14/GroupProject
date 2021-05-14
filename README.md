@@ -213,4 +213,4 @@ In this system research, development, implementation process due to personal abi
 
 2. The current system only achieves the desktop application, does not realize the mobile client, this can be developed in subsequent work.
 
-3. Need to enhance the data statistics, classification search function, so that users more convenient use of the system.
+3. Need to enhance the data statistics, classification search function, so that the user can use the system more conveniently
