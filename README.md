@@ -31,7 +31,7 @@ The establishment of the campus lost and found system is to pick up information 
 
 ### 1.3 Project presentation video
 <p align="center">
-  <a href='images/Demo_desk14.mp4' target='_blank'><img src="images/vedio.png"/></a>
+  <a href='images/Demo_desk14.mp4' target='_blank'><img src="images/video.png"/></a>
 </p>
 
 ## 2. Background and Motivation
