@@ -126,6 +126,17 @@ As for limitations:
 3. Not yet tried and tested: You may not find many answers to MEAN online questions. Some technologies are so new that there is only a small online community discussing problems that may arise during the development process.
 
 ### 6.2 Testing
+The test work of the Lost and Found Management System for university of Bristol is mainly designed to find the defects in the function and performance of the lost and found system, and to modify the system in time after the test, to ensure the smooth on-line of the system, and ensure that users have a good use experience in the process of use, and feel the convenience of the system.
+
+This system adopts the way of functional testing. The following will present each functional test case and test result of the system in the form of table, and explain and analyze it.
+
+| Test name        | Test procedure          | Expected results                   | Actual results |
+| ----------- | ---------------------------- | ---------------------------------- | ----- |
+| User login information validation | Compare the user login information with the imported information in the system | Verify user login information successfully and display status| Achieve desired effect  |
+| User register information validation  | Compare the user register information with the imported information in the system        | User login information successfully saved in the database and can used to log in   | Achieve desired effect      |
+| User log out   | Click the log out button, check if the log in state become unlogged in        | User successfully logged out and clear the user token      |  Achieve desired effect     |
+| Lost and found information released      | User log in and post information in the Lost and Found website       |  The published information will be displayed on the page after successful publication                                  |   Achieve desired effect    |
+| Reply function for the lost item post   | User log in and add reply in the detail page of a lost item post                             | The reply will be displayed on the detail page after successful publication                                   |  Achieve desired effect     |
 
 
 ## 7. Conclusion
