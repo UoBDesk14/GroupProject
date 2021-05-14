@@ -176,7 +176,7 @@ The result of this project reached the goal we established at the beginning, and
 3. The front end of this project has successfully implemented user registration and login functions, user comment functions, comment editing, deletion and submission functions,the function of posting and deleting posts.
 4. This project can guarantee a certain degree of security, such as setting the user's permission to delete posts to prevent arbitrary deletion of posts.
 
-In short, the lost and found forum established by this project realizes the functions of user login and logout, the release of news of lost property, browsing, modification and commenting of posts. The forum can help the owner to match with the picker. At the same time, since the forum can allow multiple users to comment on posts, this can play a role of multi-user supervision prevent people from fraudulently claiming other people's items.Hence, the design of the project is based around the concept of “serious play”
+In short, the lost and found forum established by this project realizes the functions of user login and logout, the release of news of lost property, browsing, modification and commenting of posts. The forum can help the owner to match with the picker. At the same time, since the forum can allow multiple users to comment on posts, this can play a role of multi-user supervision prevent people from fraudulently claiming other people's items.Hence, the design of the project is based around the concept of “serious play”.
 
 ### 7.2 The impact of the coronavirus
 It is undeniable that the coronavirus has had a great impact on our learning experience, and there are two main problems faced by members.
