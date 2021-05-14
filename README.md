@@ -8,13 +8,13 @@
 
 ## Team Members
 
-| Name        | Email                        | Role                               | Photo |
-| ----------- | ---------------------------- | ---------------------------------- | ----- |
-| Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development |       |
-| Ruiqing Du  | bx20728@bristol.ac.uk        | Report writing                     |       |
-| Ying Duan   | if20741@bristol.ac.uk        | Report writing                     |       |
-| Hao Fu      | si20170@bristol.ac.uk        |                                    |       |
-|             |                              |                                    |       |
+| Name        | Email                        | Role                                     | Photo |
+| ----------- | ---------------------------- | ---------------------------------------- | ----- |
+| Jiangqi Lou | bruce.lou.2020@bristol.ac.uk | Front-end and Back-end Development       |       |
+| Ruiqing Du  | bx20728@bristol.ac.uk        | Report writing                           |       |
+| Ying Duan   | if20741@bristol.ac.uk        | Report writing                           |       |
+| Hao Fu      | si20170@bristol.ac.uk        |                                          |       |
+| Luming Liu  | kr20826@bristol.ac.uk        | Report writing and github action setting |       |
 
 
 
@@ -134,6 +134,24 @@ The members of our team have formed a very good cooperation in this project. Eve
 In our daily work, we create, delete and manage various issues under "Projects" on the GitHub board. The phased work results of each team member can be viewed through GitHub. Our main communication channel is WeChat. We realize that we usually have limited time to communicate through Microsoft Teams in class, so we choose to communicate at any time through WeChat. For some related questions, team members can also reply at any time via WeChat. When performing agile sprints, the frequency of meetings with group members through WeChat changed from twice a week to four times a week. Therefore, the work efficiency of our team is relatively high. In short, this is a good online collaboration experience.
 
 ### 5.2 Team use of Git and documentation of the sprints
+
+In our project, each member creates his or her own branch when developing his or her own part of the code, commits the pull request to the main branch when the development is complete.  All the requests are reviewed by Jiangqi Lou, who merges them into the main branch after approval. We also use Github Action to automate the deployment of every pull request we submit and merge code to the main branch. The effect of each code modification can be viewed in real time, which greatly increases our development efficiency.
+
+Sprints Planning:
+
+| Timeline | Items                                                        | User stories                                                 |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Week 1   | Identify project topics and analyze requirements             | Users should have their own account and passwords to distinguish between different posts |
+| Week 2   | Research previous works related to the project               | A user posts a lost thing post, then the person who notices the post can contact the user. The user can also edit their profile to provide contact information |
+| Week 3   | The overall architecture design and database design of the application |                                                              |
+| Week 4   | Start with the back-end and front-end development and complete the log-in and registration features |                                                              |
+| Week 5   | Complete the posting feature                                 | If a user picks up a lost item, they can also send a post with a picture to find its owner |
+| Week 6   | Complete the details page view and reply features            |                                                              |
+| Week 7   | Complete the posting feature                                 |                                                              |
+| Week 8   | Complete the deleting posts and sorting by time features     | Posts can be tagged or deleted if items have been returned   |
+| Week 9   | Program functionality testing and bug fixes                  |                                                              |
+| Week 10  | Bug fixes and GUI interface optimization                     |                                                              |
+| Week 11  | Product delivery and report writing                          |                                                              |
 
 
 
