@@ -141,7 +141,14 @@ This system adopts the way of functional testing. The following will present eac
 
 ## 7. Conclusion
 ### 7.1 Project conclusion
+The result of this project reached the goal we established at the beginning, and it meets the requirements of “serious play”. We first found that the traditional manual registration management methods and paper manual management methods are a huge workload and complicated work. In order to make up for the shortcomings, the University Lost and Found Forum built by this project has effectively improved the efficiency of this work and completed all the basic functions required by the forum, specifically:
 
+1. The project database can store the item information released by the picker, and it is convenient and effective for data operation and management.
+2. The project can store and manage a certain amount of owner and picker information.
+3. The front end of this project has successfully implemented user registration and login functions, user comment functions, comment editing, deletion and submission functions, post publishing and deletion functions.
+4. This project can guarantee a certain degree of security, such as setting the user's permission to delete posts to prevent arbitrary deletion of posts.
+
+In short, the lost and found forum established by this project realizes the functions of user login and logout, item news release, browsing, modification and commenting of posts. The forum can help the owner to match with the owner. At the same time, since the forum can allow multiple users to comment on posts, this can play a role of multi-user supervision to prevent someone from pretending to claim others’ items. Hence, the design of the project is based around the concept of “serious play”
 
 ### 7.2 Future work
 In this system research, development, implementation process due to personal ability is limited, consider the problem is not comprehensive enough so that the system in the design and implementation of some deficiencies, these deficiencies will be improved in the follow-up practice.
