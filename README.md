@@ -89,12 +89,38 @@ Docker create the nodejs image and db image, expose port 3000 to connect to the 
 
 ## 4. UX Design
 ### 4.1 Design Process and Early prototyping and ideation
+Design process:
+- Address the problem: In today's information age, the fast pace of life makes people often lose something in life, which brings economic and spiritual loss to people. Nowadays, with the improvement of people's moral quality, people are more willing to return the lost property through some means and methods.
+- Decide the project objectives.
+- Make the paper prototype:<br/>
+  Home page of the website(unlogged in):
+  <p align="center">
+  <img src="images/home.png"/>
+  </p>
+  User click signup button:
+  <p align="center">
+  <img src="images/signup.png"/>
+  </p>
+  User enter the valid information then click submit:
+  <p align="center">
+  <img src="images/login.png"/>
+  </p>
+  User logged in and click one of the post:
+  <p align="center">
+  <img src="images/detail.png"/>
+  </p>
 
+- Build the program according to the paper prototype
+
+- Program testing
 ### 4.2 Identification of interacting users
 
 ### 4.3 UX approach
 
 ### 4.4 Interaction flow diagrams for final key subsystems
+<p align="center">
+  <img src="images/flowdiagrams.png"/>
+</p>
 
 
 
