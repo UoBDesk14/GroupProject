@@ -8,6 +8,7 @@ COPY package*.json ./
 
 USER node
 
+RUN npm config set registry https://registry.npm.taobao.org
 RUN npm install
 
 COPY --chown=node:node . .
