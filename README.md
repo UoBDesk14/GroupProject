@@ -1,9 +1,10 @@
-# LostAndFound
+# Lost and Found
 
-## Run instructions
+## Running instructions
+
 1. npm install
 2. ng build
-3. docker-compose up --build
+3. docker-compose up -d --build
 4. access (http://localhost:3000)
 
 ## Team Members
